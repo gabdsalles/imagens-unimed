@@ -1,0 +1,62 @@
+/* Estilos gerais */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  /* Container principal - Alexa */
+  .alexa-container {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: #454545;
+    border-radius: 50%; /* Agora é um círculo perfeito */
+    border: 6px solid #000; /* Estilo cartoon */
+    box-shadow: 4px 4px 0 #000;
+    overflow: hidden;
+  }
+  
+  /* Parte superior da Alexa */
+  .alexa-top {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+    background-color: #3b3b3b;
+    border-radius: 80%; /* Circular também */
+    border: 6px solid #000;
+    box-shadow: 4px 4px 0 #000;
+  }
+  
+  /* Brilho embaixo da Alexa */
+  .alexa-glow {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 50px;
+    background-color: rgba(0, 153, 255, 0.8);
+    border-radius: 50%; /* Circular no brilho também */
+    filter: blur(20px);
+    animation: glowing 2s infinite;
+  }
+  
+  /* Efeito de pulsação no brilho */
+  @keyframes glowing {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
